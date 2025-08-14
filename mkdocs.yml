@@ -19,13 +19,13 @@ markdown_extensions:
   - toc:
       permalink: true
 nav:
-  - 首页: docs/index.md
-  - 场景: docs/scenarios.md
-  - 快速开始: docs/getting-started.md
-  - 环境: docs/envs.md
-  - 智能体: docs/agents.md
-  - 人类反馈: docs/hitl.md
-  - 数据集: docs/datasets.md
+  - 首页: index.md
+  - 场景: scenarios.md
+  - 快速开始: getting-started.md
+  - 环境: envs.md
+  - 智能体: agents.md
+  - 人类反馈: hitl.md
+  - 数据集: datasets.md
   - API:
-    - rl_project: docs/api/rl_project.md
+    - rl_project: api/rl_project.md
 
