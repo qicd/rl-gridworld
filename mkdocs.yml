@@ -13,6 +13,8 @@ plugins:
             show_source: true
             show_root_heading: true
             summary: true
+            show_if_no_docstring: true
+            members_order: source
 
 markdown_extensions:
   - admonition

@@ -16,6 +16,13 @@ class QLearningConfig:
 
 
 class QLearningAgent:
+    """Tabular Q-learning agent with epsilon-greedy policy.
+
+    Args:
+      num_states: Size of discrete observation space.
+      num_actions: Size of discrete action space.
+      config: Hyperparameters (lr, gamma, epsilon schedule).
+    """
     def __init__(self, num_states: int, num_actions: int, config: Optional[QLearningConfig] = None) -> None:
         self.num_states = num_states
         self.num_actions = num_actions

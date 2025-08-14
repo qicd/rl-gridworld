@@ -16,6 +16,11 @@ class FeedbackConfig:
 
 
 class FeedbackManager:
+    """Manage human feedback for state-action pairs and shape rewards.
+
+    Feedback is accumulated as integer scores per (state, action). The shaped
+    reward is `env_reward + beta * score`.
+    """
     def __init__(self, config: FeedbackConfig) -> None:
         self.config = config
         self.file_path = config.file_path

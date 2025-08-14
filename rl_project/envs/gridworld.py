@@ -32,6 +32,16 @@ def make_default_grid() -> GridSpec:
 
 
 class GridWorldEnv:
+    """A minimal warehouse-like GridWorld environment.
+
+    Observations are discrete states encoding (x, y) grid positions.
+    Actions are 4-way moves: up(0), down(1), left(2), right(3).
+
+    Rewards:
+      - step penalty (default -1)
+      - obstacle collision penalty (default -5) and stay in place
+      - goal reward (default +10) and terminate
+    """
     metadata = {"render_modes": ["ansi"], "render_fps": 10}
 
     def __init__(
