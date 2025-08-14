@@ -7,6 +7,13 @@ from typing import Dict, List
 
 import numpy as np
 
+# Ensure project root is on sys.path when running as a script (so imports work from any CWD)
+import sys
+from pathlib import Path as _Path
+_project_root = str(_Path(__file__).resolve().parents[1])
+if _project_root not in sys.path:
+    sys.path.insert(0, _project_root)
+
 from rl_project.envs import GridWorldEnv
 from rl_project.agents import QLearningAgent
 

@@ -2,4 +2,11 @@ numpy>=1.24
 matplotlib>=3.8
 streamlit>=1.36
 requests>=2.31
+mkdocs>=1.6
+mkdocs-material>=9.5
+mkdocstrings[python]>=0.26
+mkdocs-section-index>=0.3
+llama-index>=0.10
+sentence-transformers>=2.7
+llama-index-embeddings-huggingface>=0.3
 

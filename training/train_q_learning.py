@@ -6,6 +6,13 @@ from typing import List, Tuple
 
 import numpy as np
 
+# Ensure project root on sys.path for direct script execution
+import sys
+from pathlib import Path as _Path
+_project_root = str(_Path(__file__).resolve().parents[1])
+if _project_root not in sys.path:
+    sys.path.insert(0, _project_root)
+
 from rl_project.envs import GridWorldEnv
 from rl_project.agents import QLearningAgent, QLearningConfig
 from rl_project.hitl.feedback_manager import FeedbackManager, FeedbackConfig

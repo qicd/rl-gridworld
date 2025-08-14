@@ -1,0 +1,32 @@
+site_name: RL Hands-on
+repo_url: https://github.com/qicd/rl-gridworld
+site_url: https://qicd.github.io/rl-gridworld/
+theme:
+  name: material
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            summary: true
+  - sitemap
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+nav:
+  - 首页: docs/index.md
+  - 场景: docs/scenarios.md
+  - 快速开始: docs/getting-started.md
+  - 环境: docs/envs.md
+  - 智能体: docs/agents.md
+  - 人类反馈: docs/hitl.md
+  - 数据集: docs/datasets.md
+  - API:
+    - rl_project: docs/api/rl_project.md
+

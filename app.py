@@ -7,6 +7,13 @@ import numpy as np
 import streamlit as st
 import matplotlib.pyplot as plt
 
+# Ensure project root on sys.path for `streamlit run app.py`
+import sys
+from pathlib import Path as _Path
+_project_root = str(_Path(__file__).resolve().parent)
+if _project_root not in sys.path:
+    sys.path.insert(0, _project_root)
+
 from rl_project.envs import GridWorldEnv
 from rl_project.agents import QLearningAgent, QLearningConfig
 from rl_project.hitl.feedback_manager import FeedbackManager, FeedbackConfig
@@ -31,19 +38,16 @@ def run_one_step(env: GridWorldEnv, agent: QLearningAgent, state: int, use_feedb
 
 def draw_grid(env: GridWorldEnv):
     arr = env.as_array()
-    fig, ax = plt.subplots(figsize=(3, 3))
+    fig, ax = plt.subplots(figsize=(1, 1))
     cmap = plt.get_cmap("coolwarm")
     ax.imshow(arr, cmap=cmap, vmin=-1, vmax=2)
     ax.set_xticks(range(env.grid.width))
     ax.set_yticks(range(env.grid.height))
     ax.grid(True, color="#cccccc", linewidth=0.5)
-    ax.set_title("GridWorld")
     st.pyplot(fig)
 
 
 def main():
-    st.title("仓储导航 GridWorld - 强化学习与人类反馈")
-
     env, agent, feedback_mgr = get_env_and_agent()
     use_feedback = st.sidebar.checkbox("启用人类反馈奖励塑形", value=True)
     draw_grid(env)
