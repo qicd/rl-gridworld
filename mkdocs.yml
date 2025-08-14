@@ -14,7 +14,7 @@ plugins:
             show_root_heading: true
             summary: true
   - sitemap
-
+  
 markdown_extensions:
   - admonition
   - toc:

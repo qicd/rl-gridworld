@@ -1,3 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://qicd.github.io/rl-gridworld/</loc>
+         <lastmod>2025-08-14</lastmod>
+    </url>
+    <url>
+         <loc>https://qicd.github.io/rl-gridworld/agents/</loc>
+         <lastmod>2025-08-14</lastmod>
+    </url>
+    <url>
+         <loc>https://qicd.github.io/rl-gridworld/datasets/</loc>
+         <lastmod>2025-08-14</lastmod>
+    </url>
+    <url>
+         <loc>https://qicd.github.io/rl-gridworld/envs/</loc>
+         <lastmod>2025-08-14</lastmod>
+    </url>
+    <url>
+         <loc>https://qicd.github.io/rl-gridworld/getting-started/</loc>
+         <lastmod>2025-08-14</lastmod>
+    </url>
+    <url>
+         <loc>https://qicd.github.io/rl-gridworld/hitl/</loc>
+         <lastmod>2025-08-14</lastmod>
+    </url>
+    <url>
+         <loc>https://qicd.github.io/rl-gridworld/scenarios/</loc>
+         <lastmod>2025-08-14</lastmod>
+    </url>
+    <url>
+         <loc>https://qicd.github.io/rl-gridworld/api/rl_project/</loc>
+         <lastmod>2025-08-14</lastmod>
+    </url>
 </urlset>
